@@ -4,11 +4,7 @@ all: build
 
 # Clone CoreDNS repository to current directory
 clone-coredns:
-	if [ ! -d "coredns" ]; then \
-		git submodule update --init --remote; \
-	else \
-		git submodule update --remote; \
-	fi
+	git submodule update --init --remote; \
 
 register-plugin:
 	cd coredns &&\
