@@ -1,0 +1,19 @@
+server {
+    # Test the k8s_cross plugin with headscale integration
+    clusterset.local {
+        k8s_cross {
+            headscale_url http://localhost:8002 Sb49LRo.djRq_TeNwbjfDFubrYBZhzjxdVo65S_X
+            cluster test-cluster
+            clusterset test-clusterset
+            ttl 300
+        }
+        log
+        errors
+    }
+    # Fallback to default DNS resolution for other domains
+    . {
+        forward . /etc/resolv.conf
+        log
+        errors
+    }
+}
