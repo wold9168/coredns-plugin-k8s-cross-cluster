@@ -6,7 +6,6 @@ import (
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/core/dnsserver"
 	"github.com/coredns/coredns/plugin"
-	"github.com/wold9168/k8s_cross/headscale"
 )
 
 // init registers this plugin with CoreDNS.
