@@ -1,0 +1,2 @@
+2025/12/07 07:50:17 Starting mock Headscale server on :8002
+2025/12/07 07:50:17 Failed to start mock server: listen tcp :8002: bind: address already in use

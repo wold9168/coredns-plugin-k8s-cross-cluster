@@ -1,5 +1,7 @@
 # k8s_cross
 
+**This project is still in the technical validation phase, full of hard-coded values, reinventing the wheel, internal service tokens, manual configuration items, and other bad practices. Please be aware!**
+
 ## Name
 
 *k8s_cross* - Kubernetes cross-cluster DNS resolution plugin.

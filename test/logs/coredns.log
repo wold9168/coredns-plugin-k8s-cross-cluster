@@ -1,0 +1,17 @@
+maxprocs: Leaving GOMAXPROCS=48: CPU quota undefined
+.:1053
+CoreDNS-1.13.1
+linux/amd64, go1.25.2, 1db4568df-dirty
+[INFO] 127.0.0.1:32953 - 28709 "A IN web-service.default.svc.clusterset.local. udp 81 false 1232" NXDOMAIN qr,rd,ra 185 0.00267647s
+[INFO] 127.0.0.1:34773 - 59669 "A IN api-service.production.svc.clusterset.local. udp 84 false 1232" NXDOMAIN qr,rd,ra 191 0.001097791s
+[INFO] 127.0.0.1:59320 - 18699 "AAAA IN web-service.default.svc.clusterset.local. udp 81 false 1232" NXDOMAIN qr,rd,ra 185 0.000831064s
+[INFO] 127.0.0.1:35313 - 22245 "AAAA IN api-service.production.svc.clusterset.local. udp 84 false 1232" NXDOMAIN qr,rd,ra 191 0.000690661s
+[INFO] 127.0.0.1:43959 - 32598 "SRV IN _http._tcp.web-service.default.svc.clusterset.local. udp 92 false 1232" NXDOMAIN qr,rd,ra 155 0.001075949s
+[INFO] 127.0.0.1:41340 - 33408 "SRV IN _http._tcp.api-service.production.svc.clusterset.local. udp 95 false 1232" NXDOMAIN qr,rd,ra 158 0.000979044s
+[INFO] 127.0.0.1:34836 - 6755 "TXT IN web-service.default.svc.clusterset.local. udp 81 false 1232" NXDOMAIN qr,rd,ra 185 0.00077372s
+[INFO] 127.0.0.1:40744 - 32132 "TXT IN api-service.production.svc.clusterset.local. udp 84 false 1232" NXDOMAIN qr,rd,ra 191 0.000898415s
+[INFO] 127.0.0.1:41171 - 12418 "A IN web-service.default.svc.clusterset.local. udp 81 false 1232" NXDOMAIN qr,rd,ra 185 0.000789806s
+[INFO] 127.0.0.1:36606 - 10524 "A IN api-service.production.svc.clusterset.local. udp 84 false 1232" NXDOMAIN qr,rd,ra 191 0.000796315s
+[INFO] 127.0.0.1:45090 - 31748 "A IN nonexistent-service.default.svc.clusterset.local. udp 89 false 1232" NXDOMAIN qr,rd,ra 201 0.001577181s
+[INFO] 127.0.0.1:50003 - 3076 "A IN google.com. udp 51 false 1232" NOERROR qr,rd,ra 117 0.001006579s
+[INFO] SIGTERM: Shutting down servers then terminating

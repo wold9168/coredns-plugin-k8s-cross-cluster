@@ -1,0 +1,18 @@
+[0;32m开始k8s_cross插件集成测试[0m
+测试时间: Sun Dec  7 07:53:03 AM CST 2025
+Headscale服务器: http://192.168.24.4:8002
+测试日志: /home/wold9168/Documents/_WIP/_graduate/code/k8s-cross-cluster/test/logs/integration_test_20251207075303.log
+[0;33m检查依赖...[0m
+[0;32m依赖检查通过[0m
+[0;33m检查Headscale连接...[0m
+[0;32mHeadscale连接正常[0m
+获取Headscale节点列表:
+{"nodes":[{"id":"1", "machineKey":"mkey:23e654bf8368e20ccb618727722d8ebd0d56a689617f63b3b26c193398e0d97c", "nodeKey":"nodekey:0ce6bb8e3893587c009b0db19580d70c3540b2b0143eaeef355305bb342c5925", "discoKey":"discokey:1c58447a4ee2cd00586e6682ba1bed13bdb15b9b7804a79bf4b61afce2754d58", "ipAddresses":["100.64.0.1", "fd7a:115c:a1e0::1"], "name":"toughb", "user":{"id":"1", "name":"default", "createdAt":"2025-12-04T20:13:10.652563605Z", "displayName":"test user", "email":"123@foo.com", "providerId":"", "provider":"", "profilePicUrl":""}, "lastSeen":"2025-12-04T20:53:04.956508354Z", "expiry":"0001-01-01T00:00:00Z", "preAuthKey":{"user":{"id":"1", "name":"default", "createdAt":"2025-12-04T20:13:10.652563605Z", "displayName":"test user", "email":"123@foo.com", "providerId":"", "provider":"", "profilePicUrl":""}, "id":"1", "key":"8d9aebe216fef3d312f23592767e4cdf9fc72bdd9dc2e164", "reusable":true, "ephemeral":false, "used":false, "expiration":"2026-03-04T20:20:53.709Z", "createdAt":"2025-12-04T20:20:53.828742254Z", "aclTags":[]}, "createdAt":"2025-12-04T20:41:09.911169253Z", "registerMethod":"REGISTER_METHOD_AUTH_KEY", "forcedTags":[], "invalidTags":[], "validTags":[], "givenName":"toughb", "online":false, "approvedRoutes":[], "availableRoutes":[], "subnetRoutes":[]}, {"id":"2", "machineKey":"mkey:0e91cfc95b351b174f1644a94ec3b013fa6a0104861bc23a03d5d841bbb99063", "nodeKey":"nodekey:45e5ba9b873929ce2e5e2b1562c2bbde9d83ce934c641054c146ce44e5702609", "discoKey":"discokey:36c36e4132fa9d04449d17eb562e18a7d86d69ca6acbb33565c6d189da837f39", "ipAddresses":["100.64.0.2", "fd7a:115c:a1e0::2"], "name":"3b4ed6240131", "user":{"id":"1", "name":"default", "createdAt":"2025-12-04T20:13:10.652563605Z", "displayName":"test user", "email":"123@foo.com", "providerId":"", "provider":"", "profilePicUrl":""}, "lastSeen":"2025-12-06T23:34:22.961432895Z", "expiry":"0001-01-01T00:00:00Z", "preAuthKey":{"user":{"id":"1", "name":"default", "createdAt":"2025-12-04T20:13:10.652563605Z", "displayName":"test user", "email":"123@foo.com", "providerId":"", "provider":"", "profilePicUrl":""}, "id":"1", "key":"8d9aebe216fef3d312f23592767e4cdf9fc72bdd9dc2e164", "reusable":true, "ephemeral":false, "used":false, "expiration":"2026-03-04T20:20:53.709Z", "createdAt":"2025-12-04T20:20:53.828742254Z", "aclTags":[]}, "createdAt":"2025-12-05T14:18:01.311482958Z", "registerMethod":"REGISTER_METHOD_AUTH_KEY", "forcedTags":[], "invalidTags":[], "validTags":[], "givenName":"3b4ed6240131", "online":true, "approvedRoutes":[], "availableRoutes":[], "subnetRoutes":[]}]}
+[0;33m启动CoreDNS...[0m
+等待CoreDNS启动...
+[0;31mCoreDNS启动失败[0m
+CoreDNS日志:
+maxprocs: Leaving GOMAXPROCS=48: CPU quota undefined
+/home/wold9168/Documents/_WIP/_graduate/code/k8s-cross-cluster/test/coredns-test.conf:3 - Error during parsing: Unknown directive 'clusterset.local'
+[0;33m清理测试环境...[0m
+[0;32m清理完成[0m
